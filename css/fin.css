@@ -1,0 +1,53 @@
+body{background-color: grey}
+
+
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.animation {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 250px;
+  height: 250px;
+  background-color: #179b77;
+  border: 15px solid #1ab188;
+  animation: square-to-circle 1s .83s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+
+#form
+{
+	text-align:center;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:#179b77;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:25% 25% 25% 25%;
+    background:#179b77;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 50% 50%;
+    background:#179b77;
+    transform:rotate(90deg);
+  }
+  75%  {
+    border-radius:75% 75% 75% 75%;
+    background:#179b77;
+    transform:rotate(180deg);
+  }
+  100% {
+    border-radius:100% 100% 100% 100%;
+    background:#179b77;
+    transform:rotate(360deg);
+  }
+ }
+  
+

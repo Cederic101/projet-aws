@@ -1,0 +1,32 @@
+Nous avons réalisé cette application avec le serveur node en local et la
+base de données mysql également.
+
+=== Prérequis ===
+
+Créer une base de donnée nomée 'aws'.
+
+Puis importer le fichier base.sql dans la base de données 'aws'.
+
+Pour utiliser la base de données, il faut modifier la variable
+'db' l.24 pour faire correspondre le user et le password 
+de la base de données mysql.
+
+=== Lancement de l'application ===
+
+Lancer le serveur node avec la commande 'node app.js'.
+
+Le fichier app.js est configuré pour être accessible depuis 
+l'adresse 'localhost:8080/'.
+
+Le port d'écoute de l'application est le port 8080. Il peut être
+modifié l.329 du fichier 'app.js'.
+
+=== Astuces ===
+
+Pour faciliter les tests, il est possible de changer le nombre de palier
+qui compose le jeu Curiosity. Pour cela il suffit de mettre le nombre de
+palier souhaité l.114 pour la 1ère partie jouée et l.184 pour les 
+nouvelles parties (de base il vaut 2 pour chaque partie).
+Il est également possible de réduire la taille d'un palier de Curiosity
+en modifiant la variable 'n' l.63 (de base elle vaut 6, ce qui fait un 
+palier de 6x6 cases).

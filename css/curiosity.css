@@ -1,0 +1,48 @@
+#jeu_table
+{
+	border:medium solid grey;
+	background-color: grey;
+}
+
+#page
+{
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+	width:1250px;
+}
+
+#jeu_td
+{
+	border:medium solid white;
+	background-color: grey;
+	width:120px;
+	height:100px;
+}
+
+#jeu_tr
+{
+	border:medium solid white;
+	background-color: grey;
+}
+
+tr
+{
+	border:medium solid white;
+}
+
+#jeu_td.empty
+{
+	background-color: white;
+}
+
+td
+{
+	background-color: #1ab188;
+}
+
+#jeu_td:hover {
+    background-color: #F0C300;
+		border:medium solid #F0E36B;
+		box-shadow: inset 0 0 0 10px #F0C300;
+}

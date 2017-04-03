@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/curiosity.css" rel="stylesheet" type="text/css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<table id="page">
+			<tr>
+				<td class="user">
+					<div id="userList">
+					</div>
+				</td>
+				<td width="700">
+					<div id="div_jeu" value="{{ ses.login }}">
+						<table id="jeu"></table>
+					</div>
+				</td>
+				<td>
+					<form method="post" action="/disconnect">
+						<input type="hidden" name="user" value="{{ ses.login }}">
+						<input type="submit" value="Déconnexion">
+					</form>
+				</td>
+			</tr>
+		</table>
+		<script src="js/curiosity.js"></script>
+	</body>
+</html>
+
